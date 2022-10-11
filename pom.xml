@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+<parent>
+	<groupId>82dfac12-b94d-419e-8285-2a25c522ad8e</groupId>
+	<artifactId>master-bom</artifactId>
+	<version>1.0.0</version>
+	<relativePath>../master-bom/pom.xml</relativePath>
+</parent>
+	<groupId>82dfac12-b94d-419e-8285-2a25c522ad8e</groupId>
+	<artifactId>parent-pom</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>parent-pom</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<app.runtime>4.4.0-20220824</app.runtime>
+		<mule.maven.plugin.version>3.6.3</mule.maven.plugin.version>		
+	</properties>
+
+	<build>
+	<pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>				
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>				
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>				
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</pluginManagement>
+	</build>
+</project>
